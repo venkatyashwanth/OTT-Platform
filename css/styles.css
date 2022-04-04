@@ -1,0 +1,242 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: poppins;
+  background-color: rgba(151, 151, 151, 0.03);
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.logo img {
+  height: 35px;
+}
+
+nav {
+  z-index: 100;
+}
+
+nav .menu li a {
+  height: 40px;
+  line-height: 43px;
+  margin: 0px;
+  padding: 0 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #585858;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+nav .menu li a:hover {
+  background-color: #807d7d;
+  color: #fff;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+nav .search {
+  width: 250px;
+  height: 40px;
+  background-color: rgba(245, 245, 245, 0.8);
+  padding: 0px 20px;
+}
+
+nav .search i {
+  color: #3a3a3a;
+}
+
+nav .search input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-left: 10px;
+}
+
+#main {
+  padding-top: 80px;
+  background-color: #fff;
+}
+
+.showcase__heading {
+  padding-left: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #1a1a1a;
+}
+
+.showcase__showcase-box {
+  width: 410px;
+  height: 220px;
+  -webkit-box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 0px 20px 10px 20px;
+  overflow: hidden;
+}
+
+.showcase__showcase-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.showcase .cs-hidden {
+  overflow: visible !important;
+}
+
+@media (max-width: 575.98px) {
+  .showcase__showcase-box {
+    width: 290px;
+    height: 130px;
+  }
+}
+
+#latest {
+  border-top: 1px solid rgba(53, 53, 53, 0.1);
+}
+
+.latestMovies__heading {
+  margin: 30px 30px 0px 30px;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.latestMovies__latest-box {
+  margin: 20px 10px;
+  width: 200px;
+  background-color: #fff;
+}
+
+.latestMovies__latest-box .latest-b-img {
+  height: 270px;
+}
+
+.latestMovies__latest-box .latest-b-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.latestMovies__latest-box .latest-b-text {
+  margin: 10px;
+}
+
+.latestMovies__latest-box .latest-b-text p {
+  color: #979797;
+  margin: 0px;
+}
+
+.movies-heading {
+  margin: 0 2%;
+}
+
+.movies-heading h2 {
+  font-weight: 400;
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0.01);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+}
+
+.movies-box {
+  width: 280px;
+  -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  border-radius: 5px;
+  border-top: 3px solid #292929;
+}
+
+.movies-box__movies-img {
+  height: 400px;
+  position: relative;
+}
+
+.movies-box__movies-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.movies-box__movies-img .quality {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 5px 20px;
+  font-weight: 500;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.movies-box a {
+  font-weight: 600;
+  max-width: 80%;
+  text-overflow: ellipsis;
+  color: #3a3a3a;
+  margin: 20px;
+  text-decoration: none;
+}
+
+.movies-box:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.btns a {
+  width: 130px;
+  height: 40px;
+  outline: none;
+  margin: 10px;
+  font-size: 1rem;
+}
+
+.btns a:hover {
+  background-color: #284fd1;
+}
+
+footer p {
+  color: #5e5e5e;
+  margin: 10px 0px;
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=styles.css.map */
